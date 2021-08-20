@@ -26,15 +26,16 @@ echo "<br><br>Exercice 3 <br>";
 $test = "42";
 var_dump($test);
 
+
 echo "<br><br>Exercice 4 <br>";
-$sexe = "18";
-if ($sexe < "18")// si l'age est inférieur à 18 ans
+$sexe = "M";
+if ($sexe == "M")// si sexe = M pour Male
 {
-    echo "Revenez dans quelques années <br>";
+    echo "Homme   <br>";
 }
 else //sinon
 {
-    echo "Bienvenue <br>";
+    echo "Femme <br>";
 }
 
 
@@ -64,16 +65,65 @@ else //sinon
 
 
 echo "<br><br>Exercice 7 <br>";
-$heure = "18";
-if ($heure < "18")// si l'age est inférieur à 18 ans
-{
-    echo "Vous êtes mineur, désolé <br>";
-}
-else //sinon
-{
-    echo "Bienvenue, vous êtes majeur <br>";
-}
+$heure = "22";
+if($heure >= "00" AND $heure < "13"){
+    echo "Bonjour !";
+    }elseif($heure >= "13" AND $heure < "18"){
+    echo "Bonne après-midi !";
+    }else{
+    echo "Bonsoir !";}
 
+
+echo "<br><br>Exercice 8 <br>";
+    for ( $i = 0; $i <= 10; $i++){
+    echo $i*5 . '<br />';}
+
+
+echo "<br><br>Exercice 9 <br>";
+$aug = 0;
+for ( $aug = 0; $aug <= 18; $aug++){
+    echo $aug+2 . '<br />';}
+    
+
+
+echo "<br><br>Exercice 10 <br>";
+$array = array ('FRANCE => Paris', 'ALLEMAGNE => Berlin', 'ITALIE => Rome',);
+foreach( $array as $value ) // on parcourt $array, la valeur de l'item courant est copiée dans $value
+  echo $value . '<br />'; // affichage
+
+
+  echo "<br><br>Exercice 10 <br>";
+$init = 0;
+while($init < 10){
+    $var = rand(0,100);
+    $tabNbrRand[] = $var;
+    $init++;
+}
+print_r($tabNbrRand);
+foreach($tabNbrRand as $nombre){
+    if ($nombre < 50) {
+        $tabInf50[] = $nombre;
+    }
+    if ($nombre >=50) {
+        $tabSup50[] = $nombre;
+    }
+}
+echo '<br><br>Tableau inférieur à 50 <br>';
+print_r($tabInf50);
+echo '<br><br>Tableau supérieur à 50 <br>';
+print_r($tabSup50);
+
+
+echo "<br><br>Exercice 11 <br>";
+$pays_population = array(
+    'France' => 67595000,
+    'Suede' => 9998000,
+    'Suisse' => 8417000,
+    'Kosovo' => 1820631,
+    'Malte' => 434403,
+    'Mexique' => 122273500,
+    'Allemagne' => 82800000,
+    );
 
 
 
