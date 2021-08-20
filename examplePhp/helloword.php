@@ -81,9 +81,16 @@ echo "<br><br>Exercice 8 <br>";
 
 echo "<br><br>Exercice 9 <br>";
 $aug = 0;
-for ( $aug = 0; $aug <= 18; $aug++){
-    echo $aug+2 . '<br />';}
-    
+    while ($aug  <= 20) {
+
+        $aug = $aug + 2;
+        if ($aug == 10) {
+            echo '<strong>'.$aug.'</strong><br>';
+        }else {
+            echo $aug.'<br>';
+        }
+    }
+ 
 
 
 echo "<br><br>Exercice 10 <br>";
