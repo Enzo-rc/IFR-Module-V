@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(77, 130, 151);
+        }
+
+.button{
+    background-color: #106497e1;
+    border: none;
+    color: white;
+    width: 100px;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 5%;
+    cursor: pointer;
+        }
+
+#parent{
+    padding-top: 100px;
+    display: flex;
+    
+        }
+
+#left{
+    margin-left: 5%;
+}
+
+#right{
+    margin-left: 15%;
+}
+
+#container{
+   padding-top: 100px;
+   display: flex;
+   flex-direction: column;
+            }
+
+#image_exercice{
+    width: 400px;
+    height: 200px;
+}
+
+h1{
+    text-align: right;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    color: white;
+    }
+
+h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    color: white;
+    }
+
+h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: white;
+    }
+    
+h4{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: white;
+    }
+
+h5{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    }
+    
+h6{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    }
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    }
+
