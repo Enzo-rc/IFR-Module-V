@@ -1,4 +1,4 @@
-<div>
+<div class="exercice">
     <div>
         <h3>Exercice 22</h3><br>
         <h4>Consigne :</h4><br>
@@ -11,17 +11,29 @@
         ● age = 34 ==> true.</p><br>
     </div>
 
+    <div class="magrille">
+        <pre><code class="hljs language-php"><?php
+echo htmlspecialchars('<?php
+function estIlMajeure($age)
+    {if ($age >= 18)
+        {return (true) ;}
+    else
+        {return (false) ;}
+    }
+        var_dump (estIlMajeure(18));
+?>');
+        ?></code></pre>
 
-    <div>
-        <?php
-            function estIlMajeure($age)
-                {if ($age >= 18)
-                    {return (true) ;}
-                else
-                    {return (false) ;}
-                }
-                    var_dump (estIlMajeure(18));
-        ?>
+        <div class="resultat">
+            <?php
+                function estIlMajeure($age)
+                    {if ($age >= 18)
+                        {return (true) ;}
+                    else
+                        {return (false) ;}
+                    }
+                        var_dump (estIlMajeure(18));
+            ?>
+        </div>
     </div>
-
 </div>

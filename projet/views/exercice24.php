@@ -1,4 +1,4 @@
-<div>
+<div class="exercice">
     <div>
         <h3>Exercice 24</h3><br>
         <h4>Consigne :</h4><br>
@@ -8,19 +8,33 @@
         Si l'array est vide, il faudra retourner null;</p><br>
     </div>
 
+    <div class="magrille">
+        <pre><code class="hljs language-php"><?php
+echo htmlspecialchars('<?php
+function plusGrand($val)
+    {if(empty($val))
+        {$message ="null";}
+    else
+        {$message = max($val);}
+    return $message;
+    }
+        $tableau1 = array();
+            echo plusGrand($tableau1);
+?>');
+        ?></code></pre>
 
-    <div>
-        <?php
-            function plusGrand($val)
-                {if(empty($val))
-                    {$message ="null";}
-                else
-                    {$message = max($val);}
-                return $message;
-                }
-                    $tableau1 = array();
-                        echo plusGrand($tableau1);
-        ?>
+        <div class="resultat">
+            <?php
+                function plusGrand($val)
+                    {if(empty($val))
+                        {$message ="null";}
+                    else
+                        {$message = max($val);}
+                    return $message;
+                    }
+                        $tableau1 = array();
+                            echo plusGrand($tableau1);
+            ?>
+        </div>
     </div>
-
 </div>

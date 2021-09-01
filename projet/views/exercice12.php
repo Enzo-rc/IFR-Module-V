@@ -1,4 +1,4 @@
-<div>
+<div class="exercice">
     <div>
         <h3>Exercice 12</h3><br>
         <h4>Consigne :</h4><br>
@@ -8,31 +8,49 @@
         Enfin, afficher le contenu des deux tableaux.</p><br>
     </div>
 
-    <div>
-        
+    <div class="magrille">
+        <pre><code class="hljs language-php"><?php
+echo htmlspecialchars('<?php
+$init = 0;
+while($init < 10)
+    {$var = rand(0,100);
+     $tabNbrRand[] = $var;
+     $init++;
+    }
+        print_r($tabNbrRand);
+foreach($tabNbrRand as $nombre)
+    {if ($nombre < 50)
+        {$tabInf50[] = $nombre;}
+if ($nombre >=50)
+        {$tabSup50[] = $nombre;}
+    }
+        echo "<br>Tableau inférieur à 50 <br>";
+            print_r($tabInf50);
+        echo "<br>Tableau supérieur à 50 <br>";
+            print_r($tabSup50);
+?>');
+        ?></code></pre>
+
+        <div class="resultat">
+            <?php
+                $init = 0;
+                while($init < 10)
+                    {$var = rand(0,100);
+                    $tabNbrRand[] = $var;
+                    $init++;
+                    }
+                        print_r($tabNbrRand);
+                foreach($tabNbrRand as $nombre)
+                    {if ($nombre < 50)
+                        {$tabInf50[] = $nombre;}
+                if ($nombre >=50)
+                        {$tabSup50[] = $nombre;}
+                    }
+                        echo '<br>Tableau inférieur à 50 <br>';
+                            print_r($tabInf50);
+                        echo '<br>Tableau supérieur à 50 <br>';
+                            print_r($tabSup50);
+            ?>
+        </div>
     </div>
-
-
-    <div>
-        <?php
-            $init = 0;
-            while($init < 10)
-                {$var = rand(0,100);
-                 $tabNbrRand[] = $var;
-                 $init++;
-                }
-                    print_r($tabNbrRand);
-            foreach($tabNbrRand as $nombre)
-                {if ($nombre < 50)
-                    {$tabInf50[] = $nombre;}
-            if ($nombre >=50)
-                    {$tabSup50[] = $nombre;}
-                }
-                    echo '<br>Tableau inférieur à 50 <br>';
-                        print_r($tabInf50);
-                    echo '<br>Tableau supérieur à 50 <br>';
-                        print_r($tabSup50);
-        ?>
-    </div>
-
 </div>

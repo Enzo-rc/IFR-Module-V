@@ -1,4 +1,4 @@
-<div>
+<div class="exercice">
     <div>
         <h3>Exercice 18</h3><br>
         <h4>Consigne :</h4><br>
@@ -9,13 +9,21 @@
         ● Resultat : 10.</p><br>
     </div>
 
+    <div class="magrille">
+        <pre><code class="hljs language-php"><?php
+echo htmlspecialchars('<?php
+function somme($argument3 , $argument4)
+    {return $argument3 + $argument4 ;}
+        echo somme(5 , 5). "<br>";
+?>');
+        ?></code></pre>
 
-    <div>
-        <?php
-            function somme($argument3 , $argument4)
-                {return $argument3 + $argument4 ;}
-                    echo somme(5 , 5). '<br>';
-        ?>
+        <div class="resultat">
+            <?php
+                function somme($argument3 , $argument4)
+                    {return $argument3 + $argument4 ;}
+                        echo somme(5 , 5). '<br>';
+            ?>
+        </div>
     </div>
-
 </div>

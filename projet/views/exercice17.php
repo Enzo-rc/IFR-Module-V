@@ -1,4 +1,4 @@
-<div>
+<div class="exercice">
     <div>
         <h3>Exercice 17</h3><br>
         <h4>Consigne :</h4><br>
@@ -9,13 +9,21 @@
         Resultat : AntoineGriezmann.</p><br>
     </div>
 
+    <div class="magrille">
+        <pre><code class="hljs language-php"><?php
+echo htmlspecialchars('<?php
+function concatenation($argument1 , $argument2)
+    {return $argument1 ." ". $argument2 ;} // pour créer un espace ." ".
+        echo concatenation("Antoine" , "GRIEZMANN"). "<br>";
+?>');
+        ?></code></pre>
 
-    <div>
-        <?php
-            function concatenation($argument1 , $argument2)
-                {return $argument1 ." ". $argument2 ;} // pour créer un espace ." ".
-                    echo concatenation("Antoine" , "GRIEZMANN"). '<br>';
-        ?>
+        <div class="resultat">
+            <?php
+                function concatenation($argument1 , $argument2)
+                    {return $argument1 ." ". $argument2 ;} // pour créer un espace ." ".
+                        echo concatenation("Antoine" , "GRIEZMANN"). '<br>';
+            ?>
+        </div>
     </div>
-
 </div>
