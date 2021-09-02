@@ -6,7 +6,7 @@ body{
 
 *{
     box-sizing: border-box;
-}
+}/* *s'applique à toutes les balises ; box-sizing permet de gérer autrement parents/enfants  */
 
 .button{
     background-color: #106497e1;
@@ -19,7 +19,7 @@ body{
     display: inline-block;
     font-size: 20px;
     margin: 10px 0%;
-    cursor: pointer;
+    cursor: pointer; /* modifier le pointeur de la souris */
         }
 
 #parent{
@@ -39,7 +39,7 @@ body{
 #container{
     height: 700px;
     width: 200px;
-    overflow-y: scroll;
+    overflow-y: scroll; /* Met l'ascenceur*/ 
     padding-top: 20px;
     display: flex;
     flex-direction: column;

@@ -7,6 +7,8 @@
 
     <div class="magrille">
         <pre><code class="hljs language-php"><?php
+        /*<pre> reprend le même espacement & caractère que l'éditeur de texte */
+        /* <code> représente du code en html */
 echo htmlspecialchars('<?php
 $note_maths = 15;
 $note_francais = 12;
